@@ -1,7 +1,8 @@
+/* eslint-disable no-undef */
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 // const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 
 module.exports = {
@@ -26,14 +27,14 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-        ],
-      },
+      // {
+      //   test: /\.html$/,
+      //   use: [
+      //     {
+      //       loader: 'html-loader',
+      //     },
+      //   ],
+      // },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: 'asset/resource',
@@ -45,18 +46,14 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(__dirname, 'src/templates/index.html'),
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, 'src/public/'),
-    //       to: path.resolve(__dirname, 'dist/'),
-    //       globOptions: {
-    //         // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder images
-    //         ignore: ['**/images/**'],
-    //       },
-    //     },
-    //   ],
-    // }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/public/'),
+          to: path.resolve(__dirname, 'dist/'),
+        },
+      ],
+    }),
     // new ImageminWebpWebpackPlugin({
     //   config: [
     //     {
