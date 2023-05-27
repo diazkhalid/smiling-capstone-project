@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo-sample.png">
     <title>Smiling</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light navbar-color">
+        <nav class="navbar navbar-expand-md navbar-light navbar-color">
             <div class="d-flex align-items-center ml2-1">
                 <a class="navbar-brand" href="#">
-                    <img class="rounded-circle ml-2 mr-2" src="../scripts/global/logo.png" alt="Logo Sample" height="30"
+                    <img class="rounded-circle ml-2 mr-2" src="./logo-sample.png" alt="Logo Sample" height="30"
                         style="height: 50px;">
                 </a>
                 <span class="brand-font mx-0">Smiling</span>
@@ -24,9 +25,9 @@
             <div class="collapse navbar-collapse justify-content-end mx-4" id="navbarNav">
                 <ul class="navbar-nav navlink-font">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Beranda</a>
+                        <a class="nav-link mr2-1" href="#">Beranda</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr2-1">
                         <a class="nav-link" href="#">Favorit</a>
                     </li>
                     <li class="nav-item">
@@ -50,8 +51,26 @@
             </ul>
         </div>
     </header>
+
+    <div class="hero" id="hero">
+        <picture class="hero__img">
+            <source media="(max-width: 717px)" srcset="./hero_img-xs.jpg">
+            <source media="(max-width: 1110px)" srcset="./hero_img-s.jpg">
+            <img src="./hero_img.jpg" alt="restaurant hero image" class="img-fluid">
+        </picture>
+        <div class="hero__img position-absolute" id="dark-filter" style="background-color: rgba(0, 0, 0, 0.485);"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">Melangkah Ke Dunia Imajinasi</h1>
+            <p class="hero__description">Aktivitas bonding membaca bersama anak, jendela menuju petualangan.</p>
+        </div>
+    </div>
     <!-- height di set ke 100% untuk menguji apakah drawer akan menutup jika main di klik -->
-    <main id="main-content" style="height: 100%;"></main>
+    <main id="main-content" class="container-fluid bg-main h-auto m-0 p-0"></main>
+    <footer class="footer">
+        <div class="container d-flex justify-content-center">
+          <p class="footer-text"><span class="footer-copyright">©</span> <span class="footer-year">2023</span> <span class="footer-brand">Smiling</span> || <span class="footer-tagline">Stories for Family Bonding</span></p>
+        </div>
+    </footer>   
 </body>
 
 </html>
