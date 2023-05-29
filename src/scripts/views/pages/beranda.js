@@ -9,8 +9,8 @@ const Beranda = {
     return `
       <div class="hero" id="hero">
           <picture class="hero__img">
-            <source media="(max-width: 717px)" srcset="./hero_img-xs.jpg" />
-            <source media="(max-width: 1110px)" srcset="./hero_img-s.jpg" />
+          <source media="(max-width: 717px)" srcset="./hero_img-xs.jpg" />
+          <source media="(max-width: 1110px)" srcset="./hero_img-s.jpg" />
             <img
               src="./hero_img.jpg"
               alt="restaurant hero image"
@@ -28,6 +28,20 @@ const Beranda = {
               Aktivitas bonding membaca bersama anak, jendela menuju petualangan.
             </p>
           </div>
+      </div>
+      <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-7">
+                    <div class="input-group shadow-search">
+                        <span class="input-group-prepend ">
+                            <span class="input-group-text bg-white round-l-search" style="height: 100%">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </span>
+                        <input type="text" class="form-control round-r-search" id="search-input" placeholder="Cari">
+                    </div>
+                </div>
+            </div>
       </div>
       <!-- height di set ke 100% untuk menguji apakah drawer akan menutup jika main di klik -->
       <div class="container mt-5 rounded">
