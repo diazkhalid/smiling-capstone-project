@@ -79,7 +79,7 @@ const createStoryDetailTemplate = () => `
         </table>
         </div>
     </div>
-    <div class="row justify-content-center my-3">
+    <div class="row justify-content-center my-3 sticky-top">
         <div class="col-11 col-md-6 player p-0">
         <audio controls loop preload="none">
             <source src="./horde-of-geese.mp3" type="audio/mpeg" />

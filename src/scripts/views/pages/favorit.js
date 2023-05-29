@@ -4,7 +4,7 @@ import { createStoryItemTemplate, createStoryItemTemplate2 } from '../templates/
 const Favorit = {
   async render() {
     return `
-        <h2 class="m-5">Buku Favorite</h2>
+        <h2 class="m-5">Buku Favorit</h2>
         <div class="container mt-5 rounded">
           <div class="row" id="card-container"></div>
         </div>
