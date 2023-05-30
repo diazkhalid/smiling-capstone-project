@@ -14,7 +14,7 @@ const Favorit = {
   async afterRender() {
     console.log('after render');
     const container = document.querySelector('#card-container');
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 4; i++) {
       if (i % 2 === 0) {
         container.innerHTML += createStoryItemTemplate();
       } else {
