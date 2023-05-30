@@ -22,7 +22,7 @@ const createStoryItemTemplate2 = () => `
             </div>
             <div class="card-body text-center overflow-hidden" id="body-card">
                 <h3 class="card-title"><a href="/#/detail">Penerbangan Pertama Raju</a></h3>
-                <p>Seorang fotografer alam berencana menemukan kucing liar yang aneh serta bertemu dengan makhluk-makhluk lain yang mempesona.Seorang fotografer alam berencana menemukan kucing liar yang aneh serta bertemu dengan makhluk-makhluk lain yang mempesona.</p>
+                <p>Seorang fotografer alam berencana menemukan kucing liar yang aneh serta bertemu dengan makhluk-makhluk lain yang mempesona. Seorang fotografer alam berencana menemukan kucing liar yang aneh serta bertemu dengan makhluk-makhluk lain yang mempesona.</p>
             </div>
         </div>
     </div>
