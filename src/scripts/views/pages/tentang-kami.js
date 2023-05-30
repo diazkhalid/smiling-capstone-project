@@ -19,62 +19,72 @@ const TentangKami = {
         </div>
       </div>
       <div class="container-fluid pt-5 pb-5 ">
-        <div class="container text-center">
-          <h2> Team </h2>
-          <div class="row pt-4 gx-4 gy-4">
-          <div class="col-md-6 col-lg-3 mt-2 mb-2">
-    <div class="card shadow-card rad-card">
-        <div class="overflow-hidden m-0" id="divImgCard">
-            <img id="img-item" src="./user2.png" class="img-fluid" alt="Gambar">
-        </div>
-        <div class="card-body text-center overflow-hidden" id="body-card">
-            <h3 class="card-title">Nama</h3>
-            <p>Deskripsi</p>
-        </div>
-    </div>
-  </div>
-          <div class="col-md-6 col-lg-3 mt-2 mb-2">
-    <div class="card shadow-card rad-card">
-        <div class="overflow-hidden m-0" id="divImgCard">
-            <img id="img-item" src="./user2.png" class="img-fluid" alt="Gambar">
-        </div>
-        <div class="card-body text-center overflow-hidden" id="body-card">
-            <h3 class="card-title">Nama</h3>
-            <p>Deskripsi</p>
-        </div>
-    </div>
-  </div>
-          <div class="col-md-6 col-lg-3 mt-2 mb-2">
-    <div class="card shadow-card rad-card">
-        <div class="overflow-hidden m-0" id="divImgCard">
-            <img id="img-item" src="./user.png" class="img-fluid" alt="Gambar">
-        </div>
-        <div class="card-body text-center overflow-hidden" id="body-card">
-            <h3 class="card-title">Nama</h3>
-            <p>Deskripsi</p>
-        </div>
-    </div>
-  </div>
+          <div class="container text-center">
+              <h2> Team </h2>
+                  <div class="row pt-5 gx-2 gy-4">
+                      <div class="col-md-6 col-lg-3 mt-2 mb-2">
+                        <div class="card shadow-card rad-card">
+                          <div class="overflow-hidden m-0" id="divImgCard">
+                              <img id="img-item" src="./cowok1.jpg" class="img-fluid" alt="Gambar">
+                          </div>
+                          <div class="card-body text-center" col-sm-3 id="body-card">
+                              <h3 class="card-title">Diaz Khalid</h3>
+                                <div class="col-xl-4 col-sm-4 col-lg-6 d-flex justify-content-between   py-3 mx-auto ">
+                                  <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                                  <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                                  <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
                   <div class="col-md-6 col-lg-3 mt-2 mb-2">
-            <div class="card shadow-card rad-card">
-                <div class="overflow-hidden m-0" id="divImgCard">
-                    <img id="img-item" src="./user.png" class="img-fluid" alt="Gambar">
-                </div>
-                <div class="card-body text-center overflow-hidden" id="body-card">
-                    <h3 class="card-title">Nama</h3>
-                    <p>Deskripsi</p>
-                </div>
-  
+                      <div class="card shadow-card rad-card">
+                          <div class="overflow-hidden m-0" id="divImgCard">
+                              <img id="img-item" src="./cowok2.jpeg" class="img-fluid" alt="Gambar">
+                          </div>
+                          <div class="card-body text-center" col-sm-3 id="body-card">
+                          <h3 class="card-title">Fahru Alfarizi</h3>
+                            <div class="col-xl-4 col-sm-4 col-lg-6 d-flex justify-content-between   py-3 mx-auto ">
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                            </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mt-2 mb-2">
+                      <div class="card shadow-card rad-card">
+                          <div class="overflow-hidden m-0" id="divImgCard">
+                              <img id="img-item" src="./cowok3.jpg" class="img-fluid" alt="Gambar">
+                          </div>
+                          <div class="card-body text-center" col-sm-3 id="body-card">
+                          <h3 class="card-title">Oka Devara</h3>
+                            <div class="col-xl-4 col-sm-4 col-lg-6 d-flex justify-content-between   py-3 mx-auto ">
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                            </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mt-2 mb-2">
+                      <div class="card shadow-card rad-card">
+                          <div class="overflow-hidden m-0" id="divImgCard">
+                              <img id="img-item" src="./cowok4.jpg" class="img-fluid" alt="Gambar">
+                          </div>
+                          <div class="card-body text-center" col-sm-3 id="body-card">
+                          <h3 class="card-title">Adi Sukma</h3>
+                            <div class="col-xl-4 col-sm-4 col-lg-6 d-flex justify-content-between   py-3 mx-auto ">
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                              <a href="" class="social"><i class="fab fa-youtube fa-lg" style="color: #ef1515;"></i>  </a>
+                            </div>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
             </div>
-          </div>
-  
-          </div>
-  
-          
-  </div>
         </div>
-  
-      </div>
         `;
   },
   async afterRender() {
