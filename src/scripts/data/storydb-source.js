@@ -4,7 +4,7 @@ class StoryDbSource {
   static async listAllStory() {
     const response = await fetch(API_ENDPOINT.LIST);
     const responseJson = await response.json();
-    return responseJson;
+    return responseJson.stories;
   }
 
   static async detailStory(idStory) {
