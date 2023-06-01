@@ -33,7 +33,7 @@ const createStoryItemTemplate2 = () => `
 `;
 
 const createStoryDetailTemplate = () => `
-    <div class="row">
+    <div class="row jumbotron">
         <div class="col">
             <h2>${story.title}</h2>
         </div>
@@ -83,7 +83,7 @@ const createStoryDetailTemplate = () => `
         </table>
         </div>
     </div>
-    <div class="row justify-content-center my-3 sticky-top">
+    <div class="row justify-content-center my-3 jumbotron3 sticky-top">
         <div class="col-11 col-md-6 player p-0">
         <audio controls loop preload="none">
             <source src="${path}" type="audio/mpeg" />
