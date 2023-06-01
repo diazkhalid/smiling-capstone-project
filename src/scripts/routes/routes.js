@@ -7,7 +7,7 @@ import TentangKami from '../views/pages/tentang-kami';
 
 const routes = {
   '/': Beranda,
-  '/detail': Detail,
+  '/detail/:id': Detail,
   '/favorit': Favorit,
   '/tentang-kami': TentangKami,
 };

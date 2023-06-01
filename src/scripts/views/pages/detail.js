@@ -1,4 +1,6 @@
 /* eslint-disable no-plusplus */
+import UrlParser from '../../routes/url-parser';
+import StoryDbSource from '../../data/storydb-source';
 import { createStoryDetailTemplate } from '../templates/template-creator';
 
 const Detail = {
@@ -10,10 +12,11 @@ const Detail = {
   },
 
   async afterRender() {
-    console.log('after render');
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const story = await StoryDbSource.detailStory(url.id);
     const container = document.querySelector('#detail-container');
 
-    container.innerHTML = createStoryDetailTemplate();
+    container.innerHTML = createStoryDetailTemplate(story);
   },
 };
 
