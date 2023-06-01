@@ -9,7 +9,8 @@ const createStoryItemTemplate = (storie) => `
                 <img id="img-item" class="img-fluid" src="${CONFIG.BASE_THUMBNAIL_URL + storie.thumbnailId}" alt="" crossorigin="anonymouse">
             </div>
             <div class="card-body text-center overflow-hidden" id="body-card">
-                <h3 class="card-title"><a href="/#/detail"></a> ${storie.title}</h3>
+                
+                <h3 class="card-title"> <a href="/#/detail"> ${storie.title} </a> </h3>
                 <p>${storie.description}</p>
             </div>
         </div>
@@ -31,7 +32,7 @@ const createStoryItemTemplate2 = () => `
 `;
 
 const createStoryDetailTemplate = () => `
-    <div class="row">
+    <div class="row jumbotron">
         <div class="col">
             <h2>Penerbangan Pertama Raju</h2>
         </div>
@@ -81,7 +82,7 @@ const createStoryDetailTemplate = () => `
         </table>
         </div>
     </div>
-    <div class="row justify-content-center my-3 sticky-top">
+    <div class="row justify-content-center my-3 jumbotron3 sticky-top">
         <div class="col-11 col-md-6 player p-0">
         <audio controls loop preload="none">
             <source src="./horde-of-geese.mp3" type="audio/mpeg" />
