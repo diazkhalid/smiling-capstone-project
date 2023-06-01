@@ -17,8 +17,7 @@ const DetailHelper = {
 
   playerMusic(story) {
     let musicPlayerString = '';
-    let srcString = '';
-    srcString = `./${story.musicId}.mp3`;
+    const srcString = `./${story.musicId}.mp3`;
     musicPlayerString += createMusicPlayerTemplate(srcString);
     return musicPlayerString;
   },
