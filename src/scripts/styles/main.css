@@ -320,3 +320,7 @@ audio::-webkit-media-controls-panel {
 .sticky-top {
     top: 20px;
 }
+
+.text-justify{
+    text-align: justify;
+}

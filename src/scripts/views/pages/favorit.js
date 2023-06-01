@@ -1,5 +1,5 @@
 /* eslint-disable no-plusplus */
-import { createStoryItemTemplate, createStoryItemTemplate2 } from '../templates/template-creator';
+import { createStoryItemTemplate } from '../templates/template-creator';
 
 const Favorit = {
   async render() {
@@ -29,12 +29,7 @@ const Favorit = {
     console.log('after render');
     const container = document.querySelector('#card-container');
     for (let i = 0; i < 6; i++) {
-      if (i % 2 === 0) {
-        container.innerHTML += createStoryItemTemplate();
-      } else {
-        // untuk tes overflow deskripsi
-        container.innerHTML += createStoryItemTemplate2();
-      }
+      container.innerHTML += createStoryItemTemplate();
     }
 
     // const stories = await FavoriteStoryIdb.getAllStories();
