@@ -18,7 +18,21 @@ const createStoryItemTemplate = (story) => `
     </div>
 `;
 
-const createStoryDetailTemplate = (story) => `
+const createStoryItemTemplate2 = () => `
+    <div class="col-md-6 col-lg-4 mt-2 mb-2">
+        <div class="card shadow-card rad-card">
+            <div class="overflow-hidden m-0" id="divImgCard">
+                <img id="img-item" src="./story-img.jpg" class="img-fluid" alt="Gambar">
+            </div>
+            <div class="card-body text-center overflow-hidden" id="body-card">
+                <h3 class="card-title"><a href="/#/detail">Penerbangan Pertama Raju</a></h3>
+                <p>Seorang fotografer alam berencana menemukan kucing liar yang aneh serta bertemu dengan makhluk-makhluk lain yang mempesona. Seorang fotografer alam berencana menemukan kucing liar yang aneh serta bertemu dengan makhluk-makhluk lain yang mempesona.</p>
+            </div>
+        </div>
+    </div>
+`;
+
+const createStoryDetailTemplate = () => `
     <div class="row">
         <div class="col">
             <h2>${story.title}</h2>
@@ -70,17 +84,7 @@ const createStoryDetailTemplate = (story) => `
         </div>
     </div>
     <div class="row justify-content-center my-3 sticky-top">
-        ${DetailHelper.playerMusic(story)}
-    </div>
-    <div class="row">
-        <div class="col">
-            ${DetailHelper.eachContent(story)}
-        </div>
-    </div>
-`;
-
-const createMusicPlayerTemplate = (path) => `
-    <div class="col-11 col-md-6 player p-0">
+        <div class="col-11 col-md-6 player p-0">
         <audio controls loop preload="none">
             <source src="${path}" type="audio/mpeg" />
             Your browser does not support the audio element.
