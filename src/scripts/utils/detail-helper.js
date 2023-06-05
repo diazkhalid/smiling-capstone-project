@@ -4,6 +4,7 @@
 import {
   createContentTemplate,
   createMusicPlayerTemplate,
+  createReviewViewTemplate,
 } from '../views/templates/template-creator';
 
 const DetailHelper = {
@@ -20,6 +21,15 @@ const DetailHelper = {
     const srcString = `./${story.musicId}.mp3`;
     musicPlayerString += createMusicPlayerTemplate(srcString);
     return musicPlayerString;
+  },
+
+  eachStoryReview({ review }) {
+    let storyReviewsString = '';
+    review.forEach((storyReview) => {
+      storyReviewsString += createReviewViewTemplate(storyReview);
+    });
+
+    return storyReviewsString;
   },
 };
 

@@ -20,7 +20,15 @@ class StorySearchView {
   }
 
   _getEmptyStoryTemplate() {
-    return '<div class="story-item__not__found">Tidak ada cerita untuk ditampilkan</div>';
+    return `
+    <div class="not-found text-center border-nofound">
+    <div style="padding: 50px;">
+    <img src="./nofound.png" alt="Not Found" class="not-found-image">
+    <h3 class="not-found-heading">Tidak ada data ditampilkan!</h3>
+    </div>
+    </div>
+    
+    `;
   }
 }
 

@@ -4,6 +4,7 @@ import StoryDbSource from '../../data/storydb-source';
 import { createStoryDetailTemplate } from '../templates/template-creator';
 import LikeButtonPresenter from '../../utils/like-button-presenter';
 import FavoriteStoryIdb from '../../data/favorite-story-idb';
+import ReviewInitiator from '../../utils/review-initiator';
 
 const Detail = {
   async render() {
@@ -19,6 +20,15 @@ const Detail = {
     const container = document.querySelector('#detail-container');
 
     container.innerHTML = createStoryDetailTemplate(story);
+    if (story.review.length > 0) {
+      const noReviewStatus = document.querySelector('#noReview');
+      noReviewStatus.style.display = 'none';
+    }
+
+    ReviewInitiator.init({
+      storyReviewContainer: document.querySelector('#reviewViewContainer'),
+      storyFormReviewContainer: document.querySelector('#reviewFormContainer'),
+    });
 
     LikeButtonPresenter.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),

@@ -24,6 +24,24 @@ class StoryDbSource {
       return data;
     } catch (error) { return []; }
   }
+
+  static async addCustomerReview({ id, name, review }) {
+    try {
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id, name, review,
+        }),
+      };
+      const responseText = await fetch(API_ENDPOINT.ADD_REVIEW, options);
+      return responseText.json();
+    } catch (error) {
+      return { error: true, message: `${error.message}! Review not successfully added!\nPlease check your internet connection!` };
+    }
+  }
 }
 
 export default StoryDbSource;

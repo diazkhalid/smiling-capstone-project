@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2';
 import { createLikeStoryButtonTemplate, createUnlikeStoryButtonTemplate } from '../views/templates/template-creator';
 
 const LikeButtonPresenter = {
@@ -31,6 +32,11 @@ const LikeButtonPresenter = {
     likeButton.addEventListener('click', async () => {
       await this._favoriteStories.putStory(this._story);
       this._renderButton();
+      Swal.fire({
+        title: 'Liked!',
+        text: 'Terima kasih!',
+        icon: 'success',
+      });
     });
   },
 
@@ -41,6 +47,10 @@ const LikeButtonPresenter = {
     likeButton.addEventListener('click', async () => {
       await this._favoriteStories.deleteStory(this._story.id);
       this._renderButton();
+      Swal.fire({
+        title: 'Unliked!',
+        icon: 'error',
+      });
     });
   },
 };
