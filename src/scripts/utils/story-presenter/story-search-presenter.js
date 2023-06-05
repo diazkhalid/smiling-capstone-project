@@ -1,7 +1,7 @@
-class FavoriteStorySearchPresenter {
-  constructor({ favoriteStories, view }) {
+class StorySearchPresenter {
+  constructor({ stories, view }) {
     this._view = view;
-    this._favoriteStories = favoriteStories;
+    this._stories = stories;
     this._listenToSearchRequestByUser();
   }
 
@@ -16,16 +16,16 @@ class FavoriteStorySearchPresenter {
 
     let foundStories;
     if (this.latestQuery.length > 0) {
-      foundStories = await this._favoriteStories.searchStories(this.latestQuery);
+      foundStories = await this._stories.searchStories(this.latestQuery);
     } else {
-      foundStories = await this._favoriteStories.getAllStories();
+      foundStories = await this._stories.getAllStories();
     }
 
     this._showFoundStories(foundStories);
   }
 
   _showFoundStories(stories) {
-    this._view.showFavoriteStories(stories);
+    this._view.showStories(stories);
   }
 
   get latestQuery() {
@@ -33,4 +33,4 @@ class FavoriteStorySearchPresenter {
   }
 }
 
-export default FavoriteStorySearchPresenter;
+export default StorySearchPresenter;
