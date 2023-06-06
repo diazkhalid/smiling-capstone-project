@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const { merge } = require('webpack-merge');
-// const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -48,12 +48,12 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    // new WorkboxWebpackPlugin.InjectManifest({
-    //   swSrc: path.resolve(__dirname, 'src/scripts/sw.js'),
-    //   swDest: './sw.bundle.js',
-    // }),
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: [path.join(__dirname, 'dist/**/*')],
+    new WorkboxWebpackPlugin.InjectManifest({
+      swSrc: path.resolve(__dirname, 'src/scripts/sw.js'),
+      swDest: './sw.bundle.js',
     }),
+    // new CleanWebpackPlugin({
+    //   cleanOnceBeforeBuildPatterns: [path.join(__dirname, 'dist/**/*')],
+    // }),
   ],
 });

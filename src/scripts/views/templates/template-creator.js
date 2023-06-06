@@ -77,6 +77,49 @@ const createStoryDetailTemplate = (story) => `
             ${DetailHelper.eachContent(story)}
         </div>
     </div>
+    <div class="row" id="reviewFormContainer">
+        
+    </div>
+    <div class="row">
+    <div class="col">
+        <h3>Ulasan</h3>
+        <div class="review" id="reviewViewContainer">
+        <p id="noReview">Tidak ada ulasan</p>
+            ${DetailHelper.eachStoryReview(story)}
+        </div>
+    </div>
+</div>
+`;
+
+const createReviewFormTemplate = () => `
+    <div class="col">
+        <div class="review-form">
+            <h3>Tambah Ulasan</h3>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="review-name">Nama</label>
+                    <input type="text" id="inputName" name="review-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="review-content">Isi Review</label>
+                    <textarea id="inputReview" name="review-content" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #ffe76a; border: none; margin-top: 10px; color: light gray;">Submit</button>
+            </form>
+        </div>
+    </div>
+`;
+
+const createReviewViewTemplate = (review) => `
+        <div class="review-item">
+            <div class="review-header">
+                <span class="review-name">${review.name}</span>
+                <span class="review-date">(${review.date})</span>
+            </div>
+            <div class="review-body bg-white">
+                <p>${review.review}</p>
+            </div>
+        </div>
 `;
 
 const createMusicPlayerTemplate = (path) => `
@@ -105,9 +148,25 @@ const createContentTemplate = (content, storyId) => `
     </div>
 `;
 
+const createLikeStoryButtonTemplate = () => `
+    <button aria-label="like this restaurant" id="likeButton" class="like">
+      <i class="fa fa-heart-o" aria-hidden="true"></i>
+    </button>
+  `;
+
+const createUnlikeStoryButtonTemplate = () => `
+    <button aria-label="unlike this restaurant" id="likeButton" class="like">
+      <i class="fa fa-heart" aria-hidden="true"></i>
+    </button>
+  `;
+
 export {
   createStoryItemTemplate,
   createStoryDetailTemplate,
   createMusicPlayerTemplate,
   createContentTemplate,
+  createLikeStoryButtonTemplate,
+  createUnlikeStoryButtonTemplate,
+  createReviewFormTemplate,
+  createReviewViewTemplate,
 };

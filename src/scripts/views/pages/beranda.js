@@ -1,12 +1,15 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/named */
 /* eslint-disable no-plusplus */
-import { createStoryItemTemplate } from '../templates/template-creator';
 import StoryDbSource from '../../data/storydb-source';
+import StorySearchView from '../../utils/story-presenter/story-search-view';
+import StorySearchPresenter from '../../utils/story-presenter/story-search-presenter';
+import StoryShowPresenter from '../../utils/story-presenter/story-show-presenter';
+
+const view = new StorySearchView();
 
 const Beranda = {
   async render() {
-    console.log('render');
     return `
       <div class="hero" id="hero">
           <picture class="hero__img">
@@ -52,12 +55,8 @@ const Beranda = {
   },
 
   async afterRender() {
-    const stories = await StoryDbSource.listAllStory();
-    const storiesContainer = document.querySelector('#card-container');
-
-    stories.forEach((storie) => {
-      storiesContainer.innerHTML += createStoryItemTemplate(storie);
-    });
+    new StoryShowPresenter({ view, stories: StoryDbSource });
+    new StorySearchPresenter({ view, stories: StoryDbSource });
   },
 };
 
