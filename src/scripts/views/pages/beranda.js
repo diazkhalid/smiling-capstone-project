@@ -13,7 +13,7 @@ const Beranda = {
     return `
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   
-  <div class="carousel-inner">
+  <div class="carousel-inner bg-1">
     <div class="carousel-item active bg-1">      
       <div class="carousel-caption">
         <h5>Melangkah Ke Dunia <span class="text-warning">Imajinasi</span></h5>

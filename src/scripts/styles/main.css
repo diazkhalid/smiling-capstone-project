@@ -56,6 +56,7 @@ td {
   font-size: 18px;
 }
 
+
 .navbar-color {
   background-color: #ffe76a;
 }
@@ -108,7 +109,7 @@ td {
   position: absolute;
   width: 100%;
   height: 213px;
-  background-color: #ffffff;
+  background-color: white;
   z-index: 999;
   -webkit-transform: translate(-3300px, 0);
   transform: translate(-3300px, 0);
@@ -241,6 +242,8 @@ audio {
   width: 100%;
 }
 
+
+
 audio::-webkit-media-controls-panel {
   background-color: #ffffff;
 }
@@ -325,7 +328,7 @@ audio::-webkit-media-controls-panel {
 }
 
 .sticky-top {
-  top: 20px;
+  top: 100px;
 }
 
 .text-justify {
@@ -385,7 +388,8 @@ audio::-webkit-media-controls-panel {
 }
 
 /*  carousel      */
-        
+
+
 .carousel-item {
 	height: 75vh;
 	min-height: 300px;
@@ -494,15 +498,14 @@ audio::-webkit-media-controls-panel {
 
 
 /* Team */
-
 .jumbotron{
   padding-top: 4rem;
 }
 .jumbotron1{
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 .jumbotron2{
-  margin-top: 5rem;
+  padding-top: 6rem;
 }
 
 a{

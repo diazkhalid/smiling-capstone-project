@@ -3,8 +3,8 @@ const TentangKami = {
     console.log('render');
     return `
 
-      <div class="container-fluid jumbotron3 pb-4 mb-5 my-3">
-        <div class="container jumbotron1 ">
+      <div class="container-fluid pb-4 mb-5 my-3">
+        <div class="container jumbotron2 ">
           <h2 class="text-center" data-aos="fade-down-right" data-aos-delay="100">Smiling</h2>
           <div class="clearfix pt-2">
             <img
@@ -27,7 +27,7 @@ const TentangKami = {
                 data-aos-duration="1000">
                     <p class=" fs-5"> Apakah Anda Memiliki Pertanyaan? </p>
                     <h2 class="fs-1 mb-4"> Silahkan Hubungi Kami </h2>
-                    <a href="#pindah" class="btn btn-outline-dark px-5 py-2">Kontak</a>
+                    <a href="#team" class="btn btn-outline-dark px-5 py-2">Kontak</a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@ const TentangKami = {
         </div>
     
     <section id="team" class="team section-bg">
-        <div class="container" id="pindah">
+        <div class="container">
             <div class="text-center py-2" data-aos="fade-down" data-aos-delay="100">
                 <h2 class="py-2 text-dark fw-bold" id="testing">Team</h2>
                 <p class="text-dark fs-5"> Pengembang Aplikasi Smiling yang merupakan peserta SIB cycle 4.</p>

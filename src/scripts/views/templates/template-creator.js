@@ -20,7 +20,7 @@ const createStoryItemTemplate = (story) => `
 
 const createStoryDetailTemplate = (story) => `
     <div class="row">
-        <div class="col">
+        <div class="col jumbotron1">
             <h2>${story.title}</h2>
         </div>
     </div>
@@ -123,7 +123,7 @@ const createReviewViewTemplate = (review) => `
 `;
 
 const createMusicPlayerTemplate = (path) => `
-    <div class="col-11 col-md-6 player p-0 sticky-top jumbotron2">
+    <div class="col-11 col-md-6 player p-0 sticky-top">
         <audio controls loop preload="none">
             <source src="${path}" type="audio/mpeg" />
             Your browser does not support the audio element.
