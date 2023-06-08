@@ -104,7 +104,7 @@ const createReviewFormTemplate = () => `
                     <label for="review-content">Isi Review</label>
                     <textarea id="inputReview" name="review-content" class="form-control" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="background-color: #ffe76a; border: none; margin-top: 10px; color: light gray;">Submit</button>
+                <button type="submit" class="btn btn-primary px-4 py-2" style="background-color: #e58e26; border: none; margin-top: 10px; color: light gray;">Submit</button>
             </form>
         </div>
     </div>
@@ -123,7 +123,7 @@ const createReviewViewTemplate = (review) => `
 `;
 
 const createMusicPlayerTemplate = (path) => `
-    <div class="col-11 col-md-6 player p-0">
+    <div class="col-11 col-md-6 player p-0 sticky-top jumbotron2">
         <audio controls loop preload="none">
             <source src="${path}" type="audio/mpeg" />
             Your browser does not support the audio element.
