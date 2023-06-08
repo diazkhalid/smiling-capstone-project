@@ -165,10 +165,68 @@ const TentangKami = {
                 </div>
         </div>
     </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12 text-center mb-4">
+            <h3>Contact</h3>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-8">
+          <div class="alert alert-success alert-dismissible fade show btn-alert" role="alert">
+          <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+            <form name="smiling-form">
+              <div class="form-group mt-2">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="masukkan nama" name="name">
+              </div>
+              <div class="form-group mt-2">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email">
+              </div>
+              <div class="form-group mt-2">
+                <label for="pesan">Pesan</label>
+                <textarea class="form-control" rows="10" placeholder="masukkan pesan" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim mt-2">Kirim Pesan</button>
+
+            <button class="btn btn-primary btn-loading mt-2 d-none" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+            </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
         `;
   },
   async afterRender() {
-    console.log('after render');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz89SFMUTdHVBVDgkr9du0Y7cTzx8jnJB1X4JoyWlZ0cr2zO86c6WyXZQmyyuyk3spT/exec';
+    const form = document.forms['smiling-form'];
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnloading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.btn-alert');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      btnloading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then((response) => {
+          btnloading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          myAlert.classList.toggle('d-none');
+          form.reset();
+          console.log('Success!', response);
+        })
+        .catch((error) => console.error('Error!', error.message));
+    });
   },
 };
 
