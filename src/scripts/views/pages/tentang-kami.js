@@ -19,7 +19,7 @@ const TentangKami = {
           </div>
         </div>
       </div>
-      <section class="py-5 navbar-color">
+      <section class="py-3 navbar-color">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center" data-aos="fade-left"
@@ -33,20 +33,20 @@ const TentangKami = {
         </div>
       </section>
       <div class="">
-      <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250.816, 214.009, 71.733, 1)" offset="0%"></stop><stop stop-color="rgba(255, 222.774, 21.094, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,98L120,155.2C240,212,480,327,720,334.8C960,343,1200,245,1440,236.8C1680,229,1920,310,2160,302.2C2400,294,2640,196,2880,204.2C3120,212,3360,327,3600,367.5C3840,408,4080,376,4320,334.8C4560,294,4800,245,5040,196C5280,147,5520,98,5760,73.5C6000,49,6240,49,6480,81.7C6720,114,6960,180,7200,212.3C7440,245,7680,245,7920,236.8C8160,229,8400,212,8640,245C8880,278,9120,359,9360,326.7C9600,294,9840,147,10080,89.8C10320,33,10560,65,10800,65.3C11040,65,11280,33,11520,32.7C11760,33,12000,65,12240,114.3C12480,163,12720,229,12960,236.8C13200,245,13440,196,13680,147C13920,98,14160,49,14400,49C14640,49,14880,98,15120,171.5C15360,245,15600,343,15840,375.7C16080,408,16320,376,16560,318.5C16800,261,17040,180,17160,138.8L17280,98L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffe76a" fill-opacity="1" d="M0,224L40,197.3C80,171,160,117,240,101.3C320,85,400,107,480,133.3C560,160,640,192,720,202.7C800,213,880,203,960,170.7C1040,139,1120,85,1200,85.3C1280,85,1360,139,1400,165.3L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
       </div>
       
         <div class="container-lg py-4 mt-0">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center " data-aos="fade-down" data-aos-delay="100">
-                        <h2 class="fw-bold mb-4 ">Sumber Lainnya</h2>
+                        <h2 class="fw-bold mb-4 ">Sumber</h2>
                     </div>
                 </div>
             </div>
             <div class="row" >
                 <div class="col-md-6 col-lg-4 col-sm-6 d-flex justify-content-center" data-aos="fade-up" >
-                    <div class="portofolio-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="portofolio-item" data-aos="zoom-in-down" data-aos-delay="200">
                         <img src="./storyy.png" alt="portofolio item" class="shadow-lg mb-2 bg-body rounded img-thumbnail">
         
                         <h3 class="text-capitalize fs-3 my-2"> StoryWeaver </h3>
@@ -55,7 +55,7 @@ const TentangKami = {
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-sm-6 d-flex justify-content-center">
-                    <div class="portofolio-item" data-aos="fade-left" data-aos-delay="300">
+                    <div class="portofolio-item" data-aos="zoom-in-up" data-aos-delay="300">
                         <img src="./story2.png" alt="portofolio item" class="shadow-lg mb-2 bg-body rounded img-thumbnail">
                         
                         <h3 class="text-capitalize fs-3 my-2 card-"> Storial </h3>
@@ -64,7 +64,7 @@ const TentangKami = {
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-sm-6 d-flex justify-content-center">
-                    <div class="portofolio-item " data-aos="fade-up" data-aos-delay="400">
+                    <div class="portofolio-item " data-aos="zoom-in-right" data-aos-delay="400">
                         <img src="./freestock.png" alt="portofolio item" class="shadow-lg mb-2 bg-body rounded img-thumbnail">
                         
                         <h3 class="text-capitalize fs-3 my-2"> Free-Stock-Music </h3>

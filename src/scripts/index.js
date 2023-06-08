@@ -7,8 +7,6 @@ import swRegister from './utils/sw-register';
 import App from './views/app';
 import 'aos/dist/aos.css';
 
-AOS.init();
-
 const app = new App({
   button: document.querySelector('#menu'),
   drawer: document.querySelector('#drawer'),
@@ -16,10 +14,21 @@ const app = new App({
 });
 
 window.addEventListener('hashchange', () => {
+  const { hash } = window.location;
+  if (hash === '#team') {
+    const teamSection = document.getElementById('team');
+    if (teamSection) {
+      teamSection.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+  }
   app.renderPage();
+  window.scrollTo(0, 0);
 });
 
 window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
 });
+
+AOS.init();
