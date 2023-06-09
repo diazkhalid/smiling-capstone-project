@@ -651,9 +651,13 @@ section{
   object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: top;
+  object-position: top;
 }
 
 #detail-story-container table, #detail-story-container tr, #detail-story-container td{
   background-color: #00000000 !important;
+}
+
+#hero-button:hover{
+  color: white !important;
 }
