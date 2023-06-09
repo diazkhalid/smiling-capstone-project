@@ -28,7 +28,7 @@ const createStoryDetailTemplate = (story) => `
         <div class="col-md-6 pe-md-4">
         <img class="img-fluid" src="${API_ENDPOINT.IMAGE_THUMBNAIL(story.id)}" alt="" width="100%" />
         </div>
-        <div class="col-md-6 ps-md-4">
+        <div class="col-md-6 ps-md-4" id="detail-story-container">
         <h3>Detail Cerita</h3>
         <table class="table table-borderless table-responsive mt-3">
             <tr>

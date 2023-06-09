@@ -653,3 +653,7 @@ section{
   height: 100%;
   object-position: top;
 }
+
+#detail-story-container table, #detail-story-container tr, #detail-story-container td{
+  background-color: #00000000 !important;
+}
