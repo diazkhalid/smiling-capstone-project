@@ -110,7 +110,7 @@ const TentangKami = {
 
                             <!-- Sosial Meddia -->
                             <div class="social">
-                                <a href="https://www.instagram.com/diaz_kaaa/ arah" target="blank"><i class='fab fa-instagram' style='font-size:25px;background-image: linear-gradient(to right top, #0652dd, #8c3cc8, #c017a9, #de0084, #ec005e, #f2065c, #f70d5a, #fd1457, #ff227a, #ff399e, #ff51c0, #f368e0);'></i></a>
+                                <a href="https://instagram.com/diaz_kaaa?igshid=NGExMmI2YTkyZg==" target="blank"><i class='fab fa-instagram' style='font-size:25px;background-image: linear-gradient(to right top, #0652dd, #8c3cc8, #c017a9, #de0084, #ec005e, #f2065c, #f70d5a, #fd1457, #ff227a, #ff399e, #ff51c0, #f368e0);'></i></a>
                                 <a href="https://github.com/diazkhalid" target="blank"><i class='fab fa-github' style='font-size:25px;'></i></a>
                                 <a href="https://www.linkedin.com/in/diaz-khalid-ananda-5a135a267/" target="blank"><i class='fab fa-linkedin' style='font-size:24px;background-image: linear-gradient(to left top, #ffffff, #e0dffe, #b9c2fe, #85a8ff, #1e90ff);'></i></a>
                             </div>
@@ -176,24 +176,24 @@ const TentangKami = {
 
         <div class="row justify-content-center">
           <div class="col-sm-8">
-          <div class="alert alert-success alert-dismissible fade show btn-alert" role="alert">
+          <div class="alert alert-success alert-dismissible fade show btn-alert d-none" role="alert">
           <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
             <form name="smiling-form">
               <div class="form-group mt-2">
                 <label for="nama">Nama</label>
-                <input type="text" id="nama" class="form-control" placeholder="masukkan nama" name="name">
+                <input type="text" id="nama" class="form-control" placeholder="masukkan nama" name="name" required>
               </div>
               <div class="form-group mt-2">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email">
+                <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email" required>
               </div>
               <div class="form-group mt-2">
                 <label for="pesan">Pesan</label>
-                <textarea class="form-control" rows="10" placeholder="masukkan pesan" name="pesan"></textarea>
+                <textarea class="form-control" rows="10" placeholder="masukkan pesan" name="pesan" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-kirim mt-2">Kirim Pesan</button>
+              <button type="submit" style="background-color: #e58e26" class="btn btn-primary btn-kirim mt-2">Kirim Pesan</button>
 
             <button class="btn btn-primary btn-loading mt-2 d-none" type="button" disabled>
             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -221,7 +221,7 @@ const TentangKami = {
         .then((response) => {
           btnloading.classList.toggle('d-none');
           btnKirim.classList.toggle('d-none');
-          myAlert.classList.toggle('d-none');
+          myAlert.classList.remove('d-none');
           form.reset();
           console.log('Success!', response);
         })

@@ -22,8 +22,19 @@ window.addEventListener('hashchange', () => {
       return;
     }
   }
+  if (hash === '#s-container') {
+    const teamSection = document.getElementById('s-container');
+    if (teamSection) {
+      teamSection.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+  }
   app.renderPage();
-  window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'instant',
+  });
 });
 
 window.addEventListener('load', () => {

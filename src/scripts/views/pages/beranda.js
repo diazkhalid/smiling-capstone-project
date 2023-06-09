@@ -11,26 +11,30 @@ const view = new StorySearchView();
 const Beranda = {
   async render() {
     return `
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  
-  <div class="carousel-inner jumbotron2">
-    <div class="carousel-item active bg-1">      
+    <div id="carouselExampleCaptions" class="carousel slide jumbotron2" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./slide4.jpg" class="d-block w-100" alt="Slide 1">
       <div class="carousel-caption">
-        <h5>Melangkah Ke Dunia <span class="text-warning">Imajinasi</span></h5>
-        <p>Aktivitas bonding membaca bersama anak, jendela menuju petualangan.</p>
-        <a href="#divImgCard" class="btn btn-outline-warning p-3 rounded-pill">Mari Membaca</a>
+      <h5>Melangkah Ke Dunia <span class="text-warning">Imajinasi</span></h5>
+      <p>Aktivitas bonding membaca bersama anak, jendela menuju petualangan.</p>
+      <a href="#s-container" class="btn btn-outline-warning p-3 rounded-pill text-warning" id="hero-button">Mari Membaca</a>
       </div>
     </div>
-    <div class="carousel-item bg-2">      
+    <div class="carousel-item">
+      <img src="./slide2.png" class="d-block w-100" alt="Slide 2">
       <div class="carousel-caption">
-        <h5> Mari <span class="text-warning">Berpetualang</span></h5>
-        <p> Melangkah bersama menembus dunia fantasi.</p>
+      <h5> Mari <span class="text-warning">Berpetualang</span></h5>
+      <p> Melangkah bersama menembus dunia fantasi.</p>
+      <a href="#s-container" class="btn btn-outline-warning p-3 rounded-pill text-warning" id="hero-button">Mari Membaca</a>
       </div>
     </div>
-    <div class="carousel-item bg-3">      
+    <div class="carousel-item">
+      <img src="./slide3.jpeg" class="d-block w-100" alt="Slide 3">
       <div class="carousel-caption">
-        <h5> Si Raksasa Hijau yang <span class="text-warning"> Lembut </span></h5>
-        <p> Terkadang sesuatu hal yang buruk belum tentu seburuk itu </p>
+      <h5> Si Raksasa Hijau yang <span class="text-warning"> Lembut </span></h5>
+      <p> Terkadang sesuatu hal yang buruk belum tentu seburuk itu </p>
+      <a href="#s-container" class="btn btn-outline-warning p-3 rounded-pill text-warning" id="hero-button">Mari Membaca</a>
       </div>
     </div>
   </div>
@@ -46,9 +50,9 @@ const Beranda = {
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
 </div>
-      <div class="container">
+</div>
+      <div class="container" id="s-container">
             <div class="row justify-content-center mt-5">
                 <div class="col-md-6 col-lg-4">
                     <div class="input-group shadow-search">
