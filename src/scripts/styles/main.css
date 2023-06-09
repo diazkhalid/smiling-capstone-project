@@ -13,6 +13,7 @@ html {
   height: 100%;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@ body {
   background-color: #fffef3;
   color: rgb(0, 0, 0);
   color: #3f3f3f;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -54,12 +56,18 @@ td {
   font-size: 18px;
 }
 
+
 .navbar-color {
   background-color: #ffe76a;
 }
 
+.navbar-brand{
+  margin-right: 0;
+}
+
 .brand-font {
   margin: 0 auto;
+
 }
 
 .navlink-font {
@@ -101,7 +109,7 @@ td {
   position: absolute;
   width: 100%;
   height: 213px;
-  background-color: #ffffff;
+  background-color: white;
   z-index: 999;
   -webkit-transform: translate(-3300px, 0);
   transform: translate(-3300px, 0);
@@ -234,6 +242,8 @@ audio {
   width: 100%;
 }
 
+
+
 audio::-webkit-media-controls-panel {
   background-color: #ffffff;
 }
@@ -318,7 +328,7 @@ audio::-webkit-media-controls-panel {
 }
 
 .sticky-top {
-  top: 20px;
+  top: 100px;
 }
 
 .text-justify {
@@ -330,7 +340,7 @@ audio::-webkit-media-controls-panel {
   height: 55px;
   align-items: center;
   justify-content: center;
-  background-color: #ffe76a;
+  background-color: #e58e26;
   position: fixed;
   bottom: 16px;
   right: 16px;
@@ -339,6 +349,7 @@ audio::-webkit-media-controls-panel {
   font-size: 18px;
   color: #fff;
   cursor: pointer;
+  z-index: 1;
 }
 
 .border-nofound {
@@ -374,4 +385,271 @@ audio::-webkit-media-controls-panel {
 
 #noReview{
   display: block;
+}
+
+/*  carousel      */
+
+
+.carousel-item {
+	height: 75vh;
+	min-height: 300px;
+}
+        .bg-1{
+            background-image: url(/src/public/slide4.jpg);
+        }
+        .bg-2{
+            background-image: url(/src/public/slide2.png);
+        }
+        .bg-3{
+            background-image: url(/src/public/slide3.jpeg);
+        }
+        .bg-1, .bg-2, .bg-3{
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+.carousel-caption {
+	bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 50px;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	margin-top: 25px;
+	font-family: 'Moon Dance', cursive;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 20px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+    
+  .carousel-inner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}      
+        .carousel-indicators {
+	bottom: 65px;
+}
+        .carousel-indicators button {
+	width: 100px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav {
+	text-align: center;	
+}
+.navbar-collapse .nav-item .nav-link {
+	color: #000;
+}
+.carousel-caption {
+		bottom: 350px;
+	}
+.carousel-caption h5 {
+	font-size: 65px;
+}
+.carousel-caption p {
+	font-size: 18px;
+  width: 100%;
+	}
+}        
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+		
+	}
+  .navbar-collapse .nav-item .nav-link {
+	color: #000;
+}  
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 25px;
+	}
+	.carousel-caption p {
+		font-size: 12px;
+        width: 100%;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+    .navbar-collapse {
+	background: #fff;
+}
+}
+
+
+/* Team */
+.jumbotron{
+  padding-top: 4rem;
+}
+.jumbotron1{
+  padding-top: 4rem;
+}
+.jumbotron2{
+  padding-top: 5rem;
+}
+
+a{
+  color: #e03a3c;
+}
+a:hover{
+  color: #e76668;
+  text-decoration: none;
+}
+.team .member{
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.team .member .member-img{
+  position: relative;
+  overflow: hidden;
+}
+.team .member .social{
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  text-align: center;
+}
+.team .member:hover .social{
+  opacity: 1;
+  bottom: 15px;
+}
+.team .member .social a {
+  transition: color 0.3s;
+  color: #111111;
+  margin: 0 3px;
+  padding-top: 7px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  background: #444444;
+  display: inline-block;
+  transition: ease-in-out 0.3s ;
+  -webkit-transition: ease-in-out 0.3s ;
+  -moz-transition: ease-in-out 0.3s ;
+  -ms-transition: ease-in-out 0.3s ;
+  -o-transition: ease-in-out 0.3s ;
+  color: #fff;
+}
+.team .member .social a:hover {
+  background: gray;
+}
+.team .member .social i {
+  font-size: 18px;
+}
+.team.member .member-info {
+  padding: 25px 15px;
+}
+.member-info h4 {
+  font-weight: bolder;
+  margin: 2px 5px;
+  font-size: 22px;
+  color: #111111;
+  text-align: center;
+  padding: 10px;
+}
+.member-info span {
+  display: block;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+/* Section */
+section{
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title{
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e03a3c;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.section-bg {
+  padding: 120px 0;
+  color: #fff;
+}
+.section-bg::before {
+  content: "";
+  background: #ffe76a;
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+}
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: top;
 }

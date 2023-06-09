@@ -9,11 +9,11 @@ const view = new StorySearchView();
 const Favorite = {
   async render() {
     return `
-    <h2 class="m-5">Buku Favorit</h2>
+    <h2 class="m-5 jumbotron">Buku Favorit</h2>
     <div class="container">
     <div class="row justify-content-center mt-5">
         <div class="col-md-5">
-            <div class="input-group shadow-search">
+            <div class="input-group shadow-search sticky-md-top">
                 <span class="input-group-prepend ">
                     <span class="input-group-text bg-white round-l-search" style="height: 100%">
                         <i class="fas fa-search"></i>
@@ -24,7 +24,7 @@ const Favorite = {
             </div>
         </div>
     </div>
-    <div class="container mt-5 rounded">
+    <div class="container my-5 rounded">
       <div class="row" id="card-container"></div>
     </div>
     `;

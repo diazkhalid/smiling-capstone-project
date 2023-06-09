@@ -11,31 +11,50 @@ const view = new StorySearchView();
 const Beranda = {
   async render() {
     return `
-      <div class="hero" id="hero">
-          <picture class="hero__img">
-          <source media="(max-width: 717px)" srcset="./hero_img-xs.jpg" />
-          <source media="(max-width: 1110px)" srcset="./hero_img-s.jpg" />
-            <img
-              src="./hero_img.jpg"
-              alt="restaurant hero image"
-              class="img-fluid"
-            />
-          </picture>
-          <div
-            class="hero__img position-absolute"
-            id="dark-filter"
-            style="background-color: rgba(0, 0, 0, 0.485)"
-          ></div>
-          <div class="hero__content">
-            <h2 class="hero__title">Melangkah Ke Dunia Imajinasi</h2>
-            <p class="hero__description">
-              Aktivitas bonding membaca bersama anak, jendela menuju petualangan.
-            </p>
-          </div>
+    <div id="carouselExampleCaptions" class="carousel slide jumbotron2" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./slide4.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption">
+      <h5>Melangkah Ke Dunia <span class="text-warning">Imajinasi</span></h5>
+      <p>Aktivitas bonding membaca bersama anak, jendela menuju petualangan.</p>
+      <a href="#s-container" class="btn btn-outline-warning p-3 rounded-pill text-warning" id="hero-button">Mari Membaca</a>
       </div>
-      <div class="container">
+    </div>
+    <div class="carousel-item">
+      <img src="./slide2.png" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption">
+      <h5> Mari <span class="text-warning">Berpetualang</span></h5>
+      <p> Melangkah bersama menembus dunia fantasi.</p>
+      <a href="#s-container" class="btn btn-outline-warning p-3 rounded-pill text-warning" id="hero-button">Mari Membaca</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./slide3.jpeg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption">
+      <h5> Si Raksasa Hijau yang <span class="text-warning"> Lembut </span></h5>
+      <p> Terkadang sesuatu hal yang buruk belum tentu seburuk itu </p>
+      <a href="#s-container" class="btn btn-outline-warning p-3 rounded-pill text-warning" id="hero-button">Mari Membaca</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+</div>
+      <div class="container" id="s-container">
             <div class="row justify-content-center mt-5">
-                <div class="col-md-7">
+                <div class="col-md-6 col-lg-4">
                     <div class="input-group shadow-search">
                         <span class="input-group-prepend ">
                             <span class="input-group-text bg-white round-l-search" style="height: 100%">
