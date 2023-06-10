@@ -169,33 +169,34 @@ const TentangKami = {
       <div class="container">
         <div class="row text-center">
           <div class="col-sm-12 text-center mb-4">
-            <h3>Contact</h3>
+            <h3>Kirim Pesan</h3>
             <hr>
           </div>
         </div>
 
         <div class="row justify-content-center">
           <div class="col-sm-8">
-          <div class="alert alert-success alert-dismissible fade show btn-alert d-none" role="alert">
-          <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+              <div div class="alert alert-success alert-dismissible fade show btn-alert d-none" role="alert">
+                <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            
             <form name="smiling-form">
               <div class="form-group mt-2">
                 <label for="nama">Nama</label>
-                <input type="text" id="nama" class="form-control" placeholder="masukkan nama" name="name" required>
+                <input type="text" id="nama" class="form-control" placeholder="Masukkan nama" name="name" required>
               </div>
               <div class="form-group mt-2">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email" required>
+                <input type="email" id="email" class="form-control" placeholder="Masukkan email" name="email" required>
               </div>
               <div class="form-group mt-2">
                 <label for="pesan">Pesan</label>
-                <textarea class="form-control" rows="10" placeholder="masukkan pesan" name="pesan" required></textarea>
+                <textarea class="form-control" rows="10" placeholder="Masukkan pesan" name="pesan" required></textarea>
               </div>
-              <button type="submit" style="background-color: #e58e26" class="btn btn-primary btn-kirim mt-2">Kirim Pesan</button>
+              <button type="submit" style="background-color: #e58e26; color: white" class="btn btn-kirim mt-2">Kirim Pesan</button>
 
-            <button class="btn btn-primary btn-loading mt-2 d-none" type="button" disabled>
+            <button class="btn btn-loading mt-2 d-none" style="background-color: #e58e26" type="button" disabled>
             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             Loading...
             </button>
