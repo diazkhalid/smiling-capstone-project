@@ -54,7 +54,7 @@ const Beranda = {
 </div>
       <div class="container" id="s-container">
             <div class="row justify-content-center mt-5">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-lg-8 col-lg-4">
                     <div class="input-group shadow-search">
                         <span class="input-group-prepend ">
                             <span class="input-group-text bg-white round-l-search" style="height: 100%">
