@@ -147,7 +147,7 @@ const TentangKami = {
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch d-flex justify-content-center">
                     <div class="member" data-aos="fade-up" data-aos-delay="500">
                         <div class="member-img">
-                            <img src="./adi.png" class="img-fluid shadow-lg mb-2 bg-body rounded " alt="">
+                            <img src="./adi.jpg" class="img-fluid shadow-lg mb-2 bg-body rounded " alt="">
 
                             <!-- Sosial Meddia -->
                             <div class="social">
