@@ -90,7 +90,7 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 
 
 
-              ID CAPSTONE : C23-M4002 || TEMA : SOLUSI UTILITAS || JUDUL : Smiling (Stories for Family Bonding)
+          ID CAPSTONE : C23-M4002 || TEMA : SOLUSI UTILITAS || JUDUL : Smiling (Stories for Family Bonding)
                        
                         
                         
