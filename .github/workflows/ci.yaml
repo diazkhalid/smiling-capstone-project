@@ -22,5 +22,6 @@ jobs:
       - name: Run End-to-End Test
         run: |
           npm install
-          npm run start-dev &
+          npm run build
+          npm run serve &
           npm run e2e
