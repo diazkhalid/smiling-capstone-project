@@ -18,7 +18,7 @@ const createStoryItemTemplate = (story) => `
     </div>
 `;
 
-const createStoryDetailTemplate = (story) => `
+const createStoryDetailTemplate = (story, review) => `
     <div class="row">
         <div class="col jumbotron1">
             <h2>${story.title}</h2>
@@ -85,7 +85,7 @@ const createStoryDetailTemplate = (story) => `
         <h3>Ulasan</h3>
         <div class="review" id="reviewViewContainer">
         <p id="noReview">Tidak ada ulasan</p>
-            ${DetailHelper.eachStoryReview(story)}
+            ${DetailHelper.eachStoryReview(review)}
         </div>
     </div>
 </div>
@@ -113,11 +113,11 @@ const createReviewFormTemplate = () => `
 const createReviewViewTemplate = (review) => `
         <div class="review-item">
             <div class="review-header">
-                <span class="review-name">${review.name}</span>
-                <span class="review-date">(${review.date})</span>
+                <span class="review-name">${review.nama}</span>
+                <span class="review-date">(${review.tanggal})</span>
             </div>
             <div class="review-body bg-white">
-                <p>${review.review}</p>
+                <p>${review.isi_review}</p>
             </div>
         </div>
 `;

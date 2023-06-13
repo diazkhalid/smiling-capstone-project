@@ -42,6 +42,12 @@ class StoryDbSource {
       return { error: true, message: `${error.message}! Review not successfully added!\nPlease check your internet connection!` };
     }
   }
+
+  static async getReview(id) {
+    const response = await fetch(API_ENDPOINT.GET_REVIEW(id));
+    const responseJson = await response.json();
+    return responseJson;
+  }
 }
 
 export default StoryDbSource;

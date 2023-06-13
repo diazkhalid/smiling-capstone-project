@@ -17,10 +17,11 @@ const Detail = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const story = await StoryDbSource.detailStory(url.id);
+    const review = await StoryDbSource.getReview(url.id);
     const container = document.querySelector('#detail-container');
 
-    container.innerHTML = createStoryDetailTemplate(story);
-    if (story.review.length > 0) {
+    container.innerHTML = createStoryDetailTemplate(story, review);
+    if (review.length > 0) {
       const noReviewStatus = document.querySelector('#noReview');
       noReviewStatus.style.display = 'none';
     }
