@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Test App
  
 on:
   pull_request:
@@ -19,7 +19,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Run Automated Test
+      - name: Run End-to-End Test
         run: |
           npm install
+          npm run start-dev &
           npm run e2e
