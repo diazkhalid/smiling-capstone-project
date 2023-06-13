@@ -1,7 +1,7 @@
 const CONFIG = {
-  BASE_URL: 'http://175.41.172.186:5000/',
-  BASE_IMAGE_URL: 'http://175.41.172.186:5000/images',
-  BASE_THUMBNAIL_URL: 'http://175.41.172.186:5000/thumbnail',
+  BASE_URL: 'https://smiling-back-end-wdb.vercel.app/',
+  BASE_IMAGE_URL: 'https://smiling-back-end-wdb.vercel.app/images',
+  BASE_THUMBNAIL_URL: 'https://smiling-back-end-wdb.vercel.app/thumbnail',
   CACHE_NAME: 'Smiling-Cache',
   DATABASE_NAME: 'smiling-database',
   DATABASE_VERSION: 1,

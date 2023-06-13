@@ -5,7 +5,8 @@ const API_ENDPOINT = {
   LIST: `${BASE_URL}list`,
   DETAIL: (id) => `${BASE_URL}detail/${id}`,
   ADD_REVIEW: `${BASE_URL}review`,
-  SEARCH: (keyword) => `${BASE_URL}story/search?title=${keyword}`,
+  GET_REVIEW: (id) => `${BASE_URL}getreview/${id}`,
+  SEARCH: (keyword) => `${BASE_URL}search?title=${keyword}`,
   IMAGE_STORY: (storyId, imageId) => `${BASE_IMAGE_URL}/${storyId}/${imageId}`,
   IMAGE_THUMBNAIL: (thumbId) => `${BASE_THUMBNAIL_URL}/${thumbId}`,
 };

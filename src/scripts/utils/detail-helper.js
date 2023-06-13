@@ -23,7 +23,7 @@ const DetailHelper = {
     return musicPlayerString;
   },
 
-  eachStoryReview({ review }) {
+  eachStoryReview(review) {
     let storyReviewsString = '';
     review.forEach((storyReview) => {
       storyReviewsString += createReviewViewTemplate(storyReview);

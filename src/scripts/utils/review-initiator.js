@@ -2,7 +2,6 @@
 import Swal from 'sweetalert2';
 import StoryDbSource from '../data/storydb-source';
 import UrlParser from '../routes/url-parser';
-import DateHelper from './date-helper';
 import { createReviewViewTemplate, createReviewFormTemplate } from '../views/templates/template-creator';
 
 const ReviewInitiator = {
@@ -39,16 +38,11 @@ const ReviewInitiator = {
     const inputName = document.querySelector('#inputName');
     const inputReview = document.querySelector('#inputReview');
     const responseJSON = await StoryDbSource.addCustomerReview({ id, name, review });
-    const DATE = new Date().toISOString();
-    const date = new Date(DATE);
+    const reviewResponse = await StoryDbSource.getReview(id);
+    const latestReview = reviewResponse[reviewResponse.length - 1];
 
-    if (await responseJSON.status === 'success') {
-      this._storyReviewContainer.innerHTML += createReviewViewTemplate({
-        id,
-        name,
-        review,
-        date: `${date.getDate()} ${DateHelper.monthNameChecker(date.getMonth() + 1)} ${date.getFullYear()}`,
-      });
+    if (await responseJSON.length > 0) {
+      this._storyReviewContainer.innerHTML += createReviewViewTemplate(latestReview);
       const noReviewStatus = document.querySelector('#noReview');
       noReviewStatus.style.display = 'none';
       inputName.value = '';
