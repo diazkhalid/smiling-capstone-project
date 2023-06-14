@@ -123,7 +123,7 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
       <th> Database </th>
     </tr>
     <tr>
-     <td>  Netlify || Vercel  </td>
+     <td>   Netlify || Vercel   </td>
      <td>  MongoDB  </td>
     </tr>
   </table>
