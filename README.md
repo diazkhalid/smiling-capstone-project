@@ -124,7 +124,7 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
     </tr>
     <tr>
      <td>   Netlify || Vercel   </td>
-     <td>  MongoDB  </td>
+     <td>  PostgreSQL  </td>
     </tr>
   </table>
 </div>                     
