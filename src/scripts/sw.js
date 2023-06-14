@@ -9,7 +9,7 @@ precacheAndRoute(self.__WB_MANIFEST);
 // https://www.dicoding.com/academies/219/discussions/255835
 registerRoute(
   // eslint-disable-next-line prefer-regex-literals
-  new RegExp('^http://175.41.172.186:5000'),
+  new RegExp('^https://smiling-back-end-wdb.vercel.app'),
   new NetworkFirst({
     cacheName: 'smiling-api',
     plugins: [
