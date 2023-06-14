@@ -89,6 +89,20 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 <h2 align="center"> Project </h2>
 
 
+  <table>
+    <tr>
+      <th> ID CAPSTONE </th>
+      <th> TEMA </th>
+      <th> JUDUL </th>
+    </tr>
+    <tr>
+     <td>  C23-M4002 </td>
+     <td>  SOLUSI UTILITAS </td>
+     <td>  Smiling (Stories for Family Bonding) </td>
+    </tr>
+  </table>
+
+
 
           ID CAPSTONE : C23-M4002 || TEMA : SOLUSI UTILITAS || JUDUL : Smiling (Stories for Family Bonding)
                        
@@ -119,6 +133,7 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 [<img align="left" alt="Postman" width="48px" height="48" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="Eslint" width="48px" height="48" src="https://img.icons8.com/fluency/48/node-js.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="Eslint" width="48px" height="48" src="https://img.icons8.com/color/48/eslint.png" style="padding-right:10px;" />][webdev]
+[<img align="left" alt="postgresql" width="48px" height="48" src="https://img.icons8.com/plasticine/48/postgreesql.png" alt="postgreesql"/> style="padding-right:10px;" />][webdev]
 
 <br />
 <br />
