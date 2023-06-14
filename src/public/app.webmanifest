@@ -6,7 +6,7 @@
     "description": "Story for Family Bonding",
     "display": "standalone",
     "background_color": "#FFFFFF",
-    "theme_color": "#D84315",
+    "theme_color": "#FFE76A",
     "icons": [
       {
         "src": "/icons/icon-72x72.png",
