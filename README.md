@@ -112,6 +112,21 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 
 <div align="center" style="text-align: justify">
   WEB Manifest || PWA || Multi Platform
+</div> 
+
+<h2 align="center"> Deploy & Database </h2>
+
+<div align="center" style="text-align: justify">
+  <table>
+    <tr>
+      <th> Deploy </th>
+      <th> Database </th>
+    </tr>
+    <tr>
+     <td>  Netlify || Vercel  </td>
+     <td>  MongoDB  </td>
+    </tr>
+  </table>
 </div>                     
 
 ## Team 
@@ -132,7 +147,9 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 [<img align="left" alt="Postman" width="48px" height="48" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="Eslint" width="48px" height="48" src="https://img.icons8.com/fluency/48/node-js.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="Eslint" width="48px" height="48" src="https://img.icons8.com/color/48/eslint.png" style="padding-right:10px;" />][webdev]
-[<img align="left" alt="postgresql" width="48px" height="48" src="https://img.icons8.com/plasticine/48/postgreesql.png" alt="postgreesql"/> style="padding-right:10px;" />][webdev]
+[<img align="left" alt="postgresql" width="48px" height="48" src="https://img.icons8.com/plasticine/48/postgreesql.png" alt="postgreesql" style="padding-right:10px;"/>][webdev]
+
+[<img align="left" alt="postgresql" width="48px" height="48" src="https://img.icons8.com/color/48/000000/mongodb.png" alt="postgreesql" style="padding-right:10px;"/>][webdev]
 
 <br />
 <br />
