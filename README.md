@@ -89,6 +89,8 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 <h2 align="center"> Project </h2>
 
 
+<div align="center" text-align=" left" >
+
   <table>
     <tr>
       <th> ID CAPSTONE </th>
@@ -102,13 +104,10 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
     </tr>
   </table>
 
+ </div>
 
 
-          ID CAPSTONE : C23-M4002 || TEMA : SOLUSI UTILITAS || JUDUL : Smiling (Stories for Family Bonding)
-                       
-                        
-                        
-                                        
+
 <h2 align="center"> Features </h2>
 
 <div align="center" style="text-align: justify">
