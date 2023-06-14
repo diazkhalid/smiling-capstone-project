@@ -76,7 +76,7 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
     </tr>
     <tr>
      <td> https://smiling-api-docs.netlify.app/#/ </td>
-     <td> https://github.com/diazkhalid/smiling-app-back-end  </td>
+     <td> https://github.com/diazkhalid/smiling-back-end-wdb   </td>
     </tr>
   </table>
        
@@ -89,16 +89,44 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 <h2 align="center"> Project </h2>
 
 
+<div align="center" text-align=" left" >
 
-          ID CAPSTONE : C23-M4002 || TEMA : SOLUSI UTILITAS || JUDUL : Smiling (Stories for Family Bonding)
-                       
-                        
-                        
-                                        
+  <table>
+    <tr>
+      <th> ID CAPSTONE </th>
+      <th> TEMA </th>
+      <th> JUDUL </th>
+    </tr>
+    <tr>
+     <td>  C23-M4002 </td>
+     <td>  SOLUSI UTILITAS </td>
+     <td>  Smiling (Stories for Family Bonding) </td>
+    </tr>
+  </table>
+
+ </div>
+
+
+
 <h2 align="center"> Features </h2>
 
 <div align="center" style="text-align: justify">
   WEB Manifest || PWA || Multi Platform
+</div> 
+
+<h2 align="center"> Deploy & Database </h2>
+
+<div align="center" style="text-align: justify">
+  <table>
+    <tr>
+      <th> Deploy </th>
+      <th> Database </th>
+    </tr>
+    <tr>
+     <td>  Netlify || Vercel  </td>
+     <td>  MongoDB  </td>
+    </tr>
+  </table>
 </div>                     
 
 ## Team 
@@ -119,6 +147,9 @@ Berikut merupakan beberapa faktor yang dapat menunda pembuatan proyek website ya
 [<img align="left" alt="Postman" width="48px" height="48" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="Eslint" width="48px" height="48" src="https://img.icons8.com/fluency/48/node-js.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="Eslint" width="48px" height="48" src="https://img.icons8.com/color/48/eslint.png" style="padding-right:10px;" />][webdev]
+[<img align="left" alt="postgresql" width="48px" height="48" src="https://img.icons8.com/plasticine/48/postgreesql.png" alt="postgreesql" style="padding-right:10px;"/>][webdev]
+
+[<img align="left" alt="postgresql" width="48px" height="48" src="https://img.icons8.com/color/48/000000/mongodb.png" alt="postgreesql" style="padding-right:10px;"/>][webdev]
 
 <br />
 <br />
