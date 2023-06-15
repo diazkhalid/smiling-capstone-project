@@ -26,6 +26,11 @@ const ReviewInitiator = {
       const inputName = document.querySelector('#inputName');
       const inputReview = document.querySelector('#inputReview');
 
+      if (inputName.value.length > 16) {
+        Swal.fire('Nama harus dibawah 16 karakter!');
+        return;
+      }
+
       this._makeRequest({
         id: url.id,
         name: inputName.value,

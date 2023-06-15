@@ -98,13 +98,13 @@ const createReviewFormTemplate = () => `
             <form id="reviewForm">
                 <div class="form-group">
                     <label for="inputName">Nama</label>
-                    <input type="text" id="inputName" name="review-name" class="form-control" required>
+                    <input type="text" id="inputName" name="review-name" class="form-control" required placeholder="Masukkan nama (Maks 16 karakter)">
                 </div>
                 <div class="form-group">
                     <label for="inputReview">Isi Review</label>
-                    <textarea id="inputReview" name="review-content" class="form-control" required></textarea>
+                    <textarea id="inputReview" name="review-content" class="form-control" required placeholder="Masukkan isi review"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary px-4 py-2 btn-submit" style="background-color: #e58e26; border: none; margin-top: 10px; color: light gray;">Submit</button>
+                <button type="submit" class="btn btn-primary px-4 py-2 btn-submit button-sub" style="background-color: #e58e26; border: none; margin-top: 10px; color: light gray;">Submit</button>
             </form>
         </div>
     </div>
