@@ -397,19 +397,7 @@ audio::-webkit-media-controls-panel {
 	height: 75vh;
 	min-height: 300px;
 }
-        .bg-1{
-            background-image: url(/src/public/slide4.jpg);
-        }
-        .bg-2{
-            background-image: url(/src/public/slide2.png);
-        }
-        .bg-3{
-            background-image: url(/src/public/slide3.jpeg);
-        }
-        .bg-1, .bg-2, .bg-3{
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
+      
 .carousel-caption {
 	bottom: 220px;
     z-index: 2;
@@ -687,4 +675,9 @@ a{
 
 .drawer-nav > .nav-item{
   padding-bottom: 5px !important;
+}
+
+.button-sub:hover{
+  box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.295);
+  background-color: #e58f26f2 !important;
 }
